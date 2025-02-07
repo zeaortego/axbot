@@ -44,7 +44,7 @@ async def test(ctx, *args):
     await ctx.send(respuesta)
 
 @bot.command()
-async def millicomvpn(ctx, *args):
+async def millicomvpn(ctx):
     respuesta = "Here you can find Millicom's vpn access: https://wiki.axiros.com/display/PMR/Infraestructure+and+VPN+Access"
     await ctx.send(respuesta)
 

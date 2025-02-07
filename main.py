@@ -43,10 +43,9 @@ async def test(ctx, *args):
     respuesta = ' '.join(args)
     await ctx.send(respuesta)
 
-@bot.command()
+@bot.command(ctx, arg)
 async def millicomvpn():
-    print ("Here you can find Millicom's vpn access: https://wiki.axiros.com/display/PMR/Infraestructure+and+VPN+Access")
-    await ctx.send(respuesta)
+    await ctx.send("Here you can find Millicom's vpn access: https://wiki.axiros.com/display/PMR/Infraestructure+and+VPN+Access")
 
 @bot.event
 async def on_ready():
@@ -54,4 +53,3 @@ async def on_ready():
 
 webserver.keep_alive()
 bot.run(DISCORD_TOKEN)
-

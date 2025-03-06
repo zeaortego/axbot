@@ -61,6 +61,11 @@ async def millicomvpn(ctx):
     response = f"Hello {ctx.author.mention}, here you can find a link to Millicom's vpn access: https://wiki.axiros.com/display/PMR/Infraestructure+and+VPN+Access"
     await ctx.send(response)
 
+@bot.command()
+async def telecentrovpn(ctx):
+    response = f"Hello {ctx.author.mention}, here you can find a link to Telecentro's vpn access: https://wiki.axiros.com/pages/viewpage.action?spaceKey=EO&title=New+Telecentro%3A+VPN+ACCESS"
+    await ctx.send(response)    
+
 #Documentation commands:
 @bot.command()
 async def docsaxiros(ctx):
